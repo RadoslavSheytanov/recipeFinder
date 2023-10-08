@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Finder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="p-5 bg-light">
+    <div class="container mb-5">
+      <!-- Header -->
+      <h1 class="display-4 mb-4 text-center">Recipe Finder</h1>
+
+      <!-- Main Search and Popular Ingredients Card -->
+      <div class="card shadow p-4 mb-5 rounded">
+        <!-- Search Bar with a button -->
+        <form class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter ingredient"
+            aria-label="Recipe Search"
+            aria-describedby="search-btn"
+          />
+          <button class="btn btn-outline-primary" type="submit" id="search-btn">
+            Search
+          </button>
+        </form>
+
+        <!-- Popular ingredients -->
+        <div class="mb-4">
+          <p>Popular ingredients:</p>
+          <div class="d-inline-block me-2">
+            <button type="button" class="btn btn-primary">Garlic</button>
+          </div>
+          <div class="d-inline-block me-2">
+            <button type="button" class="btn btn-secondary">Potato</button>
+          </div>
+          <div class="d-inline-block">
+            <button type="button" class="btn btn-warning">Onion</button>
+          </div>
+        </div>
+
+        <!-- Container for recipe suggestions -->
+        <div class="recipeSuggestions">
+          <p class="text-muted">Search for a recipe to get suggestions here.</p>
+        </div>
+      </div>
+
+      <!-- Inspiration Section -->
+      <div class="mt-5 card shadow rounded">
+        <div class="card-body">
+          <h2 class="mb-4 text-center">Looking for inspiration?</h2>
+          <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-4 mb-3">
+              <div class="card h-100">
+                <img
+                  src="https://via.placeholder.com/120"
+                  class="card-img-top"
+                  alt="Recipe Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sample Recipe 1</h5>
+                  <p class="card-text">
+                    Main ingredients: Chicken, Garlic, Onions
+                  </p>
+                  <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-4 mb-3">
+              <div class="card h-100">
+                <img
+                  src="https://via.placeholder.com/120"
+                  class="card-img-top"
+                  alt="Recipe Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sample Recipe 2</h5>
+                  <p class="card-text">
+                    Main ingredients: Beef, Broccoli, Ginger
+                  </p>
+                  <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-4 mb-3">
+              <div class="card h-100">
+                <img
+                  src="https://via.placeholder.com/120"
+                  class="card-img-top"
+                  alt="Recipe Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sample Recipe 3</h5>
+                  <p class="card-text">
+                    Main ingredients: Salmon, Asparagus, Lemon
+                  </p>
+                  <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
