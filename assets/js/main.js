@@ -6,4 +6,7 @@
 4. Display the returned results/suggestions in the container.
 
 
+Later on To-Do: Append the ingredient suggestions to the search bar. The button should dissapear when the user clicks on them and appends them to the search bar.
+
+
 */
